@@ -1,2 +1,2 @@
-# Portugol-Logica_de_Programacao
- Arquivos da aula de Logica de Programação do Curso em Video
+# Logica_de_Programacao
+ Arquivos da aula do Curso em Video
