@@ -10,23 +10,26 @@ using namespace std;
 	Os dois ultimos:
 */
 int main () {
-	char nome[], copia[];
+	char nome[40], copia[40];
 	int n;
 	
 	cout << "Entre com o nome: ";
-	cin >> nome;
+	cin.getline(nome,40);
 
 	cout << "\nTodo nome: " << nome;
 
 	cout << "\nPrimeiro caracter: " << nome[0] ;
-	cout << "\nUltimo caracter: " << nome[strlen(nome)] ;
+	cout << "\nUltimo caracter: " << nome[strlen(nome)-1] ;
 	cout << "\nQuarto caracter: " << nome[3]  ;
 
-	strncpy (nome, copia, 3);
+	strncpy (copia, nome, 3);
+	copia[3]='\0';
 	cout << "\nPrimeiro ao terceiro caracter: " << copia ;
 
-	cout << "\nTodos menos o primeiro: " << memset(nome, '-', 1);
+	memset(nome, '-', 1);
+	cout << "\nTodos menos o primeiro: " << nome ;
 
 	n = strlen(nome) -2;
-	cout << "\nOs dois ultimos: " << memset(nome,'-', n) ; 
+	memset(nome,'-', n);
+	cout << "\nOs dois ultimos: " << nome ; 
 }

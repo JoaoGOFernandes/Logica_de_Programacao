@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 //Ler nome, endereço e telefone e imprimi-los
@@ -6,13 +7,13 @@ int main() {
 	string nome, endereco, telefone;
 	
 	cout << "Enter com nome: ";
-	cin >> nome;
+	getline(cin, nome);
 
 	cout << "Enter com endereco: ";
-	cin >> endereco;
+	getline(cin, endereco);
 	
 	cout <<"Enter com telefone: ";
-	cin >> telefone;
+	getline(cin, telefone);
 
 	cout << "\n\n\n" << "Seu nome eh: " << nome << endl
 	                 << "Seu domicilio eh: " << endereco << endl
@@ -20,4 +21,4 @@ int main() {
 	return 0;
 }
 //A string entende o espaço como o final da cadeia de caracter
-//Voltar e arrumar quando aprender a corrigir
+//Por isso usamos o comando getline
