@@ -21,4 +21,4 @@ int main() {
 	return 0;
 }
 //A string entende o espaço como o final da cadeia de caracter
-//Por isso usamos o comando getline
+//Por isso usamos o comando de entrada getline
