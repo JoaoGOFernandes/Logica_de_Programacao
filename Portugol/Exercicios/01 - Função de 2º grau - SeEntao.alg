@@ -1,5 +1,5 @@
-algoritmo "Funcao 2 grau"
-// Função : Dado uma equação de 2 grau, calcula o valor de x
+algoritmo "se"
+// Função : Calculo raizes equação de 2 grau
 // Autor : João Gabriel
 // Feito : 05/11/2018
 // Revisado: 28/06/2021 
