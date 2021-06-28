@@ -1,31 +1,31 @@
 algoritmo "Contagem Inteligente"
-// Função :
+// FunÃ§Ã£o :
 // Autor :
 // Data : 12/04/2020
-// Seção de Declarações
+// Revisado: 28/06/2021 
 var
 i,f:inteiro
 inicio
-Escreval("CONTAGEM INTELIGENTE")
-Escreval("--------------------")
-Escreva("Inicio: ")
+escreval("CONTAGEM INTELIGENTE")
+escreval("--------------------")
+escreva("Inicio: ")
 leia(i)
-Escreva("Fim: ")
+escreva("Fim: ")
 leia(f)
-Escreval("--------------------")
-Escreval("  C O N T A N D O   ")
-Escreval("--------------------")
+escreval("--------------------")
+escreval("  C O N T A N D O   ")
+escreval("--------------------")
 se(i<f) entao
-   Enquanto ( i<=f ) faca
-      Escreva(i,".. ")
-      i<-i+1
-   FimEnquanto
+   enquanto (i <= f) faca
+      escreva(i,".. ")
+      i <- i + 1
+   fimEnquanto
 senao
-   se(i>f)entao
-       Enquanto ( i>=f ) faca
-         Escreva(i,".. ")
-         i<- i-1
-         FimEnquanto
-    Fimse
-FimSe
+   se(i > f)entao
+      enquanto (i >= f) faca
+         escreva(i,".. ")
+         i <- i - 1
+      fimEnquanto
+    fimse
+fimSe
 fimalgoritmo
