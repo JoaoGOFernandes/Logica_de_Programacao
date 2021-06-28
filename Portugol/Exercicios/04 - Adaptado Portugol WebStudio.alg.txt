@@ -1,0 +1,18 @@
+programa {
+	funcao inicio() {
+    	inteiro soma, digitado, quantidade, limite
+    	soma = 0
+        quantidade = 1
+        escreva("Quantos valores você pretende somar? ")
+        leia(limite)
+        faca
+        {
+            escreva("Digite o " + quantidade + "º valor: ")
+            leia(digitado)
+            soma = soma + digitado
+            quantidade = quantidade+1
+        }enquanto (quantidade <= limite)
+        
+        escreva("\nO valor total é: " + soma)
+	}
+}

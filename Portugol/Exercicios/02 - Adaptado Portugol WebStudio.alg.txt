@@ -1,0 +1,48 @@
+programa {
+	funcao inicio() 
+	{
+	    real a, p, b, IMC
+	    escreva ("Informe sua altura: ")
+        leia(a)
+        escreva ("Informe se peso: ")
+        leia(b)
+        escreva ("Fala serio, qual o seu peso de verdade? ")
+        leia(p)
+        IMC = p / (a*a)
+        escreva ("\n Seu indice de massa corporea é: ", IMC)
+        se (IMC < 17){
+            escreva ("\n Você tá a capa da gaita, devia comer mais um pouquinho")
+            escreva ("\n Segundo a OMS você está MUITO ABAIXO DO PESO")
+        } senao {
+            se(IMC >= 17 e IMC < 18.5) {
+                escreva ("\n Digamos que está faltando pão na sua sopa")
+                escreva ("\n Segundo a OMS você esta ABAIXO DO PESO")
+            } senao {
+                se(IMC >= 18.5 e IMC < 25) {
+                    escreva ("\n Se estiver fazendo academia continua que deu BOM")
+                    escreva ("Segundo a OMS você esta NO PESO IDEAL")
+                } senao {
+                    se(IMC >= 25 e IMC < 30) {
+                        escreva ("\n Exagerou no adoçante, volte uma casa")
+                        escreva ("\n Segundo a OMS você esta com SOBREPESO")
+                    } senao {
+                        se(IMC >= 30 e IMC < 35) {
+                            escreva ("\n Pare de roubar o lanche do colega, vc tá comendo por dois")
+                            escreva ("\n Segundo a OMS você esta com OBESIDADE")
+                        } senao {
+                            se(IMC >= 35 e IMC < 40) {
+                                escreva ("\n Se tropeçar caia num palete, e grite madeeeeeeeeira ")
+                                escreva ("\n Segundo a OMS você esta com SOBREPESO SEVERO")
+                            } senao {
+                                se(IMC >= 40) {
+                                    escreva ("\n Dale cochinha se nao devora os dedos")
+                                    escreva ("\n Segundo a OMS você esta com SOBREPESO MORBIDO")
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

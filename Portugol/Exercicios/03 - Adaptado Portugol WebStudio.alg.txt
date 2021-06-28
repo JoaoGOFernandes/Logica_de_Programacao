@@ -1,0 +1,40 @@
+programa {
+    inclua biblioteca Matematica --> mat
+	funcao inicio() {
+    	inteiro Gs,Gc,d
+    	
+        escreva("\n Quantos gols do São Paulo: ")
+        leia(Gs)
+        escreva("\n Quantos gols do Corintias: ")
+        leia(Gc)
+        d = mat.valor_absoluto(Gs-Gc)
+        escreva("\n---------------------------")
+        escreva("\n DIFERENÇA: " + d)
+        escolha (d)
+        {
+        caso 1:
+        escreva("\n STATUS: Partida Normal")
+        pare
+        
+        caso 2:
+        escreva("\n STATUS: Partida Normal")
+        pare
+        
+        caso 3:
+        escreva("\n STATUS: Partida Normal")
+        pare
+        
+        caso 4:
+        escreva("\n STATUS: Partida Normal")
+        pare
+        
+        caso 0:
+        escreva("\n STATUS: Empate")
+        pare
+        
+        caso contrario:
+        escreva("\n STATUS: Goleada")
+        }
+        escreva("\n ---------------------------")
+    }
+}

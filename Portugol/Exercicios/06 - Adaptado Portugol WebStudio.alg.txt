@@ -1,0 +1,30 @@
+programa {
+	funcao inicio() {
+	    real Nota, Alunos, Turma, Top
+	    cadeia Nome, Best
+	    
+        escreva ("----------------------------\n")
+        escreva ("   Escola Santa Paciencia   \n")
+        escreva ("----------------------------\n")
+        escreva ("Quantos alunos a turma tem? \n")
+        leia(Turma)
+        escreva ("----------------------------\n")
+        Alunos = 1
+        Top = 0
+        Best = "Nome"
+        faca {
+            escreva ("\nALUNO " + Alunos)
+            escreva ("\nNome do aluno: ")
+            leia(Nome)
+            escreva ("Nota de "+ Nome + ": ")
+            leia(Nota)
+            escreva ("----------------------------")
+              se(Nota > Top){
+                  Top = Nota
+                  Best = Nome
+              }
+            Alunos = Alunos + 1
+        } enquanto ( Alunos <= Turma )
+        escreva("\nO melhor aproveitamento foi de ", Best, " com nota de: ", Top)
+	}
+}

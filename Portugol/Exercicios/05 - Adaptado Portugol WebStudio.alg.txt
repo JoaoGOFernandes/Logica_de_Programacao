@@ -1,0 +1,27 @@
+programa {
+	funcao inicio() {
+	    inteiro i, f
+        escreva ("CONTAGEM INTELIGENTE \n")
+        escreva ("-------------------- \n")
+        escreva ("Inicio: ")
+        leia(i)
+        escreva ("Fim: ")
+        leia(f)
+        escreva ("--------------------\n")
+        escreva ("  C O N T A N D O   \n")
+        escreva ("--------------------\n")
+        
+        se(i < f) {
+            faca{
+                escreva( i + ".. ")
+                i = i + 1
+            }enquanto (i <= f)
+        }
+        senao se(i > f) {
+            faca{
+                escreva( i + ".. ")
+                i = i - 1
+            }enquanto (i >= f) 
+        }
+	}
+}
