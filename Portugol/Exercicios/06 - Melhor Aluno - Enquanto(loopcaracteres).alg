@@ -1,31 +1,31 @@
-algoritmo "Melhor Aluno"
-// Função :
-// Autor :
+algoritmo "Enquanto"
+// FunÃ§Ã£o : Analise nota de aluno
+// Autor : JoÃ£o Gabriel
 // Data : 12/04/2020
-// Seção de Declarações 
+// Revisado: 28/06/2021 
 var
 Nome, Best:Caractere
 Nota, Alunos, Turma, Top:Real
 inicio
-Escreval("----------------------------")
-Escreval("   Escola Santa Paciencia   ")
-Escreval("----------------------------")
-Escreva("Quantos alunos a turma tem? ")
-Leia(Turma)
-Escreval("----------------------------")
+escreval("----------------------------")
+escreval("   Escola Santa Paciencia   ")
+escreval("----------------------------")
+escreva("Quantos alunos a turma tem? ")
+leia(Turma)
+escreval("----------------------------")
 Alunos <- 1
-Enquanto ( Alunos <= Turma ) faca
-Escreval("ALUNO ", Alunos)
-Escreva("Nome do aluno: ")
-Leia(Nome)
-Escreva("Nota de ", Nome, ": ")
-Leia(Nota)
-Escreval("----------------------------")
+enquanto ( Alunos <= Turma ) faca
+escreval("ALUNO ", Alunos)
+escreva("Nome do aluno: ")
+leia(Nome)
+escreva("Nota de ", Nome, ": ")
+leia(Nota)
+escreval("----------------------------")
   Se(Nota > Top) entao
   Top <- Nota
   Best <- Nome
   FimSe
 Alunos <- Alunos + 1
-FimEnquanto
-Escreva("O melhor aproveitamento foi de ", Best, " com nota de: ", Top)
+fimEnquanto
+escreva("O melhor aproveitamento foi de ", Best, " com nota de: ", Top)
 fimalgoritmo
