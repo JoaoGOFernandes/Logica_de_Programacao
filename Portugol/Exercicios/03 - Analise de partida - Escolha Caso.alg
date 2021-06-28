@@ -1,20 +1,20 @@
-algoritmo "Estrutura Condicional"
-// Função :
-// Autor :
+algoritmo "Escolha"
+// FunÃ§Ã£o : Analise Partida
+// Autor : JoÃ£o Gabriel
 // Data : 29/03/2020
-// Seção de Declarações
+// Revisado: 28/06/2021 
 var
 Gs,Gc,d: inteiro
 inicio
 escreval("---------------------------")
-escreva("Quantos gols do São Paulo: ")
+escreva("Quantos gols do SÃ£o Paulo: ")
 leia(Gs)
 escreva("Quantos gols do Corintias: ")
 leia(Gc)
 escreval("---------------------------")
 d <- abs(Gs-Gc)
 escreval("---------------------------")
-escreval("DIFERENÇA:", d)
+escreval("DIFERENÃ‡A:", d)
 escolha d
 caso 1,2,3,4
    escreval("STATUS: Partida Normal")
@@ -22,8 +22,7 @@ caso 0
    escreval("STATUS: Empate")
 outrocaso
    escreval("STATUS: Goleada")
-FimEscolha
+fimEscolha
 escreval("---------------------------")
 
-// Seção de Comandos
 fimalgoritmo
