@@ -1,19 +1,19 @@
-algoritmo "Somatorio de x valores"
-// Função :
-// Autor :
+algoritmo "Enquanto"
+// FunÃ§Ã£o : Somatorio de x valores
+// Autor : JoÃ£o Gabriel
 // Data : 12/04/2020
-// Seção de Declarações
+// Revisado: 28/06/2021 
 var
 soma,digitado,quantidade,limite: inteiro
 inicio
 quantidade<-1
-Escreva("Quantos valores você pretende somar? ")
+escreva("Quantos valores vocÃª pretende somar? ")
 leia(limite)
-Enquanto (quantidade <= limite) faca
-   escreva("Digite o ",quantidade,"º valor: ")
+enquanto (quantidade <= limite) faca
+   escreva("Digite o ",quantidade,"Âº valor: ")
    leia(digitado)
-soma<-soma+digitado
-quantidade<-quantidade+1
-FimEnquanto
-escreval("O valor total é: ",soma)
+   soma <- soma + digitado
+   quantidade <- quantidade + 1
+fimEnquanto
+escreval("O valor total Ã©: ",soma)
 fimalgoritmo
